@@ -4,7 +4,7 @@ var current_page = 1, count = 0;
 $(function(){
 	setTimeout(function(){
 		newSearch();
-	}, 200);
+	}, 100);
 });
 
 function newSearch() {
@@ -34,7 +34,7 @@ function doSearch(){
 				var level = parseInt(entry.level);
 				if ((level > $('#min').val()) && (level < $('#max').val())) {
 					count++;
-					var h = '<div class="entry '+(entry.sex==0?'female':'male')+'"><img src="'+entry.videocapture+'"  onClick="watchStream(\''+entry.hlsvideosource+'\')">';
+					var h = '<div class="entry '+(entry.sex==0?'female':'male')+'"><img src="'+entry.videocapture+'">';
 					h += '<h1>'+(entry.title.length > 0 ? entry.title : '-')+'</h1><h2><span>'+entry.uname+'</span></h2>';
 					h += '<h2 class="userid">User ID: <span>'+entry.userid+'</span></h2>';
 					h += '<h3>Level: <span>'+entry.level+'</span>Views: <span>'+entry.watchnumber+'</span></h3>';
@@ -45,11 +45,11 @@ function doSearch(){
 				}
 			}
 
-			if ((current_page < 5000) && (count < $('#limit').val() )) {
+			if ((current_page < 100) && (count < $('#limit').val() )) {
 				current_page++;
 				setTimeout(function(){
 					doSearch();
-				}, 25);
+				}, 100);
 			}
 
 		}
@@ -58,6 +58,3 @@ function doSearch(){
 
 }
 
-function watchStream(u) {
-	window.open('player.html?u='+u,'_player','width=360,height=640');	
-}
