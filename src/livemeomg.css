@@ -1,0 +1,256 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #89f;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    cursor: default
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0
+}
+
+form {
+    margin: 0;
+    padding: 0
+}
+
+input[type=text] {
+    display: inline-block;
+    height: 32px;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 12pt;
+    line-height: 32px;
+    margin: 0 4px;
+    padding: 0 8px;
+    border-radius: 5px;
+    vertical-align: middle;
+    outline: none
+}
+
+input[type=button] {
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12pt;
+    font-weight: 400;
+    padding: 0 16px;
+    display: inline-block;
+    height: 32px;
+    border-radius: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none
+}
+
+header {
+    display: block;
+    height: 40px;
+    color: rgba(255, 255, 255, 0.70);
+    background-color: rgba(0, 0, 0, 0.60);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+header .select.limit {
+    position: absolute;
+    right: 20px;
+    top: 3px;
+    width: 150px
+}
+
+header div.min,
+header div.max {
+    display: inline-block;
+    line-height: 40px;
+    margin-left: 32px;
+}
+
+
+header div.min input,
+header div.max input {
+    width: 60px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+label {
+    display: inline-block;
+    font-size: 9pt;
+    font-weight: 700;
+    text-align: center
+}
+
+
+
+
+
+#main {
+    display: block;
+    padding: 50px 10px 10px;
+    text-align: center
+}
+
+#main .entry {
+    display: inline-block;
+    width: 200px;
+    height: 220px;
+    background-color: rgba(0, 0, 0, 0.10);
+    color: rgba(0, 0, 0, 0.8);
+    vertical-align: top;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px
+}
+
+#main .entry.male {
+    background-color: rgba(137, 207, 240, 0.5)
+}
+
+#main .entry.female {
+    background-color: rgba(249, 204, 202, 0.5)
+}
+
+#main .entry.male:hover {
+    background-color: rgba(137, 207, 240, 1)
+}
+
+#main .entry.female:hover {
+    background-color: rgba(249, 204, 202, 1)
+}
+
+#main .entry img {
+    display: inline-block;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+}
+
+#main .entry h1 {
+    display: block;
+    height: 40px;
+    font-size: 9pt;
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: 4px
+}
+
+#main .entry h2 {
+    font-size: 8pt;
+    line-height: 10pt;
+    font-weight: 700;
+    margin-bottom: 6px
+}
+
+#main .entry h2 span {
+    font-weight: 700;
+    font-size: 9pt
+}
+
+#main .entry h3 {
+    font-size: 8pt;
+    line-height: 10pt;
+    font-weight: 700;
+    margin-bottom: 3px
+}
+
+#main .entry h3 span {
+    font-size: 9pt;
+    font-weight: 700;
+    padding: 0 5px;
+    display: inline-block;
+    margin-right: 16px
+}
+
+#main .entry h3 span:last-child {
+    margin-right: 0
+}
+
+
+
+.select {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    min-width: 80px;
+    height: 32px;
+    background: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    background: #6a79c9;
+    vertical-align: middle
+}
+
+.select>select {
+    display: block;
+    position: relative;
+    width: 112%;
+    height: 31px;
+    line-height: 31px;
+    margin: 0;
+    padding: 0 4px;
+    padding-left: 9px;
+    color: #f1f2f9;
+    background: transparent;
+    border: 0;
+    font-size: 11pt;
+    -webkit-appearance: none
+}
+
+.select>select:focus {
+    z-index: 2;
+    width: 100%;
+    outline: none
+}
+
+.select option {
+    text-shadow: none
+}
+
+.select:before,
+.select:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 11px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 3px dashed;
+    border-color: rgba(0, 0, 0, 0.4) transparent;
+    pointer-events: none
+}
+
+.select:before {
+    border-bottom-style: solid;
+    border-top: none
+}
+
+.select:after {
+    margin-top: 6px;
+    border-top-style: solid;
+    border-bottom: none
+}
