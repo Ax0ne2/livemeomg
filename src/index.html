@@ -2,18 +2,20 @@
 <html>
 	<head>
 		<title>LiveMeomg</title>
+
+		<link rel="stylesheet" href="livemeomg.css" media="all">
+
 		<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 		<script type="text/javascript" src="livemeomg.js"></script>
-		<link rel="stylesheet" href="livemeomg.min.css" media="all">
 	</head>
 	<body>
+
 		<header>
-			<h1>LiveMe<span>OMG</span></h1>
 			<div class="select limit">
 				<select id="limit" onChange="newSearch()">
 					<option value="25">25 Per Page</option>
 					<option value="50">50 Per Page</option>
-					<option value="100">100 Per Page</option>
+					<option selected value="100">100 Per Page</option>
 					<option value="250">200 Per Page</option>
 					<option value="500">500 Per Page</option>
 					<option value="1000">1000 Per Page</option>
@@ -29,11 +31,11 @@
 			</div>
 
 		</header>
+
+
 		<div id="main">
 
 		</div>
-		<footer>
-			<h1>by The Coder</h1>
-		</footer>
+
 	</body>
 </html>
