@@ -3,13 +3,11 @@
 This is a simple script designed to allow you to see current active broadcasts
 on LiveMe.
 
-Development is discussed on [TheCoder's Discord Server](https://discord.gg/A5p2aF4) along with 
-feedback from users.
-
+If you find an issue or want to discuss enhancements, please create an Issue Ticket.
 
 ## Getting Started
 
-Just download this script to your computer and run the included html page.
+Just download this script to your computer, extract and open ```index.html``` page.
 
 ## Authors
 
